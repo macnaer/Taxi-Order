@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TaxiOrder</string>
+    <string name="title_activity_driver_maps">Map</string>
 </resources>
