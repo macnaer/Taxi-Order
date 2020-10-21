@@ -53,8 +53,6 @@ public class DriverSignInActivity extends AppCompatActivity {
 
         loginSignUpButton = findViewById(R.id.loginSignUpButton);
         toggleLoginSignUpTextView = findViewById(R.id.toggleLoginSignUpTextView);
-
-
     }
 
     private boolean validateEmail() {
@@ -156,8 +154,6 @@ public class DriverSignInActivity extends AppCompatActivity {
                                                 Toast.LENGTH_SHORT).show();
                                         //updateUI(null);
                                     }
-
-                                    // ...
                                 }
                             });
         } else {
@@ -166,7 +162,6 @@ public class DriverSignInActivity extends AppCompatActivity {
                     !validateConfirmPassword()) {
                 return;
             }
-
             auth.createUserWithEmailAndPassword(
                     textInputEmail.getEditText().getText().toString().trim(),
                     textInputPassword.getEditText().getText().toString().trim())
@@ -193,13 +188,9 @@ public class DriverSignInActivity extends AppCompatActivity {
                                         //updateUI(null);
                                     }
 
-                                    // ...
                                 }
                             });
         }
-
-
-
     }
 
     public void toggleLoginSignUp(View view) {
